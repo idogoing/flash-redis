@@ -11,6 +11,9 @@
 	<name>flash-redis</name>
 
 	<properties>
+		<!-- aspectjweaver -->
+		<aspectjweaver.version>1.7.4</aspectjweaver.version>
+		<cglib.version>2.1_3</cglib.version>
 		<jedis.version>2.6.0</jedis.version>
 	</properties>
 
@@ -31,6 +34,25 @@
 			<artifactId>jedis</artifactId>
 			<version>${jedis.version}</version>
 		</dependency>
-		
+
+		<!-- AspectJ -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectjweaver.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectjweaver.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>${cglib.version}</version>
+		</dependency>
+
 	</dependencies>
 </project>
