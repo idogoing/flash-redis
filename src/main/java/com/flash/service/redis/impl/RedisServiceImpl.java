@@ -14,12 +14,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import redis.clients.jedis.ShardedJedis;
-import redis.clients.jedis.ShardedJedisPool;
-
 import com.flash.commons.json.JsonHelper;
 import com.flash.service.redis.Function;
 import com.flash.service.redis.RedisService;
+
+import redis.clients.jedis.ShardedJedis;
+import redis.clients.jedis.ShardedJedisPool;
 
 /**
  * 一个公用的RedisService,该类中所有的获取方法,若获取不到,均返回 null
